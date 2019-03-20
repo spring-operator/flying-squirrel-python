@@ -18,7 +18,7 @@ venv/.ok: venv
 .PHONY: test tests
 test: tests
 tests:
-	SERVICE_URL='http://guest:guest@localhost:55670/socks-api/default' \
+	SERVICE_URL='https://guest:guest@localhost:55670/socks-api/default' \
 		${PYTHON} setup.py test
 
 .PHONY: sdist
